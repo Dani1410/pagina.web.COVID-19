@@ -1,0 +1,638 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: 3.5em;
+}
+h2 {
+  font-size: 2.7em;
+  color: blueviolet;
+}
+h3 {
+  font-size: 2em;
+  color: blueviolet;
+}
+p {
+  font-size: 1em;
+}
+li {
+  font-size: 1.25em;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+header {
+  background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+  margin: 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  color: blueviolet;
+  font-size: 1.6em;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+header a:hover {
+  color: blueviolet;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("img/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#hero h1 {
+  position: absolute;
+  color: white;
+  border: solid white 3px;
+  padding: 20px 20px;
+}
+
+#descripcion-general .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#donde-surgio .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#causas-y-propagacion .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#nuevo-coronavirus .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#sintomas .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#sintomas li {
+  text-align: left;
+}
+
+#evolucion .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#mutacion .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#variante .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#cepa .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#virulencia-del-virus .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#proteina-s .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#adaptar-las-vacunas .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#cepas-detectadas .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#variantes .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#prevencion .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#prevencion li {
+  text-align: left;
+}
+
+#mascarilla .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#mascarilla li {
+  text-align: left;
+}
+
+#botton-up {
+  transform: scale(0);
+}
+
+footer {
+  background-color: white;
+  width: 100%;
+  padding: 50px 0px;
+  background-image: url("img/background-footer.svg");
+  background-size: cover;
+}
+
+.container__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.box__footer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.box__footer .logo img {
+  width: 180px;
+}
+
+.box__footer .terms {
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #7a7a7a;
+  font-size: 18px;
+}
+
+.box__footer h4 {
+  margin-bottom: 30px;
+  color: #343434;
+  font-weight: 700;
+}
+
+.box__footer a {
+  margin-top: 10px;
+  color: #7a7a7a;
+  font-weight: 600;
+}
+
+.box__footer a:hover {
+  opacity: 0.8;
+}
+
+.box__footer a .fab {
+  font-size: 20px;
+}
+
+.box__copyrigtht {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px;
+}
+
+.box__copyrigtht p {
+  margin-top: 20px;
+  color: #7a7a7a;
+}
+
+.box__copyrigtht hr {
+  border: none;
+  height: 1px;
+  background-color: #7a7a7a;
+}
+
+@media (min-width: 720px) {
+  header {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    transition: .7s;
+    z-index: 10;
+  }
+
+  header .logo{
+    color: white;
+  }
+
+  header.abajo{
+    background-color: white;
+    padding: 15px 5px;
+    width: 100%;
+  }
+
+  header.abajo .logo{
+    color: blueviolet;
+  }
+
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
+
+  #hero{
+    position: relative;
+    background: 
+    linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("img/hero.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+
+  #hero h1 {
+    position: absolute;
+    font-size: 6em;
+  }
+
+  #hero .border {
+    color: white;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+      1px 1px 0 white;
+  }
+
+  #hero .wave {
+    color: blueviolet;
+    animation: shift 3s ease-in-out infinite;
+  }
+
+  @keyframes shift {
+    0%,
+    100% {
+      clip-path: polygon(
+        0% 47%,
+        10% 48%,
+        33% 54%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%
+      );
+    }
+
+    50% {
+      clip-path: polygon(
+        0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  }
+
+  #descripcion-general .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #descripcion-general .img-oms {
+    background-image: url("img/oms.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    width: 400px;
+  }
+
+  #descripcion-general .texto {
+    width: 50%;
+    max-width: 600px;
+    padding-left: 30px;
+    text-align: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #donde-surgio .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #donde-surgio .texto {
+    width: 50%;
+    max-width: 600px;
+    padding-left: 30px;
+    text-align: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #donde-surgio h3 {
+    margin: 0;
+    padding-bottom: 30px;
+  }
+
+  #donde-surgio .img-china {
+    background-image: url("img/china.png");
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    width: 400px;
+  }
+
+  #nuevo-coronavirus .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #nuevo-coronavirus .texto {
+    width: 50%;
+    max-width: 600px;
+    padding-left: 30px;
+    text-align: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nuevo-coronavirus h3 {
+    margin: 0;
+    padding-bottom: 30px;
+  }
+
+  #nuevo-coronavirus .img-mercado {
+    background-image: url("img/mercado.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    width: 400px;
+  }
+
+  #sintomas .container {
+    text-align: left;
+  }
+
+  #evolucion .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #evolucion .texto {
+    width: 50%;
+    max-width: 600px;
+    padding-left: 30px;
+    text-align: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #evolucion h3 {
+    margin: 0;
+    padding-bottom: 30px;
+  }
+
+  #evolucion .img-adn {
+    background-image: url("img/adn.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    width: 400px;
+  }
+
+  #proteina-s .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #proteina-s .texto {
+    width: 50%;
+    max-width: 600px;
+    padding-left: 30px;
+    text-align: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #proteina-s .img-proteina {
+    background-image: url("img/proteina-s.png");
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    width: 400px;
+  }
+
+  #prevencion .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #prevencion .texto {
+    width: 50%;
+    max-width: 600px;
+    padding-left: 30px;
+    text-align: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #prevencion .img-virus {
+    background-image: url("img/virus.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    width: 400px;
+  }
+
+  #mascarilla .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #mascarilla .texto {
+    width: 50%;
+    max-width: 600px;
+    padding-left: 30px;
+    text-align: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #mascarilla .img-cubrebocas {
+    background-image: url("img/cubrebocas.png");
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    width: 400px;
+  }
+
+  /*Boton de ir arriba*/
+  #button-up {
+    width: 60px;
+    height: 60px;
+    background: #46a2fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: oll 300ms ease;
+    transform: scale(0);
+  }
+
+  #button-up:hover {
+    transform: scale(1.1);
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+
+  footer {
+    background-color: white;
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url("img/background-footer.svg");
+    background-size: cover;
+  }
+
+  .container__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+  }
+
+  .box__footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  .box__footer .logo img {
+    width: 180px;
+  }
+
+  .box__footer .terms {
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+  }
+
+  .box__footer h4 {
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 700;
+  }
+
+  .box__footer a {
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+  }
+
+  .box__footer a:hover {
+    opacity: 0.8;
+  }
+
+  .box__footer a .fab {
+    font-size: 20px;
+  }
+
+  .box__copyrigtht {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+  }
+
+  .box__copyrigtht p {
+    margin-top: 20px;
+    color: #7a7a7a;
+  }
+
+  .box__copyrigtht hr {
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+  }
+}
