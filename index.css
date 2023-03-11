@@ -265,6 +265,7 @@ footer {
 }
 
 @media (min-width: 720px) {
+
   header {
     background-color: transparent;
     position: fixed;
@@ -287,6 +288,14 @@ footer {
     color: blueviolet;
   }
 
+  header.abajo nav a{
+    color: black;
+  }
+
+  header.abajo nav a:hover{
+    color: blueviolet;
+  }
+
   header .container {
     flex-direction: row;
     justify-content: space-between;
@@ -296,6 +305,10 @@ footer {
     flex-direction: row;
     padding-bottom: 0;
     padding-right: 20px;
+  }
+
+  header nav a{
+    color: white;
   }
 
   #hero{
