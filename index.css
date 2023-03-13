@@ -550,7 +550,7 @@ footer {
   }
 
   #evolucion .texto {
-    width: 50%;
+    width: 500px;
     max-width: 600px;
     padding-left: 30px;
     text-align: initial;
@@ -581,13 +581,12 @@ footer {
   }
 
   #vcv .cart {
+    text-align: center;
     border-radius: 15px;
     margin: 20px;
     border: 2px solid rgb(0, 0, 0, 0.5);
-  }
-
-  #vcv .cart {
-    text-align: center;
+    width: 33.33%;
+    height: 670px;
   }
 
   #vcv .cart:hover {
@@ -651,7 +650,7 @@ footer {
   }
 
   #vcv .cart .texto-cart {
-    padding-top: 20px;
+    padding: 30px 20px;
   }
 
   #vcv .cart hr {
