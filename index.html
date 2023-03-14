@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="img/virus-solid.svg">
     <title>COVID-19</title>
+    
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="img/virus-solid.svg">
+    <link rel="stylesheet" href="css/estilos.css">
 
     <script src="https://kit.fontawesome.com/1731f30281.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
@@ -19,7 +23,7 @@
                 <a href="#sintomas">Sintomas</a>
                 <a href="#evolucion">Evolucion</a>
                 <a href="#prevencion">Prevencion</a>
-                <a href="/contactanos/contactanos.html">Contactanos</a>
+                <a href="#contactanos">Contactanos</a>
             </nav>
         </div>
     </header>
@@ -254,7 +258,39 @@ En las actualizaciones epidemiológicas semanales de la OMS- en inglés, se prop
         </div>
     </section>
 
+    <section class="form_wrap" id="contactanos">
 
+        <section class="cantact_info">
+            <section class="info_title">
+                <span class="fa fa-user-circle"></span>
+                <h2>INFORMACION<br>DE CONTACTO</h2>
+            </section>
+            <section class="info_items">
+                <p><span class="fa fa-envelope"></span> wolfchis0@gmail.com</p>
+                <p><span class="fa fa-mobile"></span> 55-2999-9983</p>
+            </section>
+        </section>
+
+        <form action="enviar.php" method="post" class="form_contact">
+            <h2>Envia un correo</h2>
+            <div class="user_info">
+                <label for="names">Nombres *</label>
+                <input type="text" id="names" name="nombre" required>
+
+                <label for="phone">Telefono / Celular</label>
+                <input type="text" id="phone" name="telefono">
+
+                <label for="email">Correo electronico *</label>
+                <input type="text" id="email" name="correo" required>
+
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <input type="submit" value="Enviar Mensaje" id="btnSend">
+            </div>
+        </form>
+
+    </section>
 
     <div id="button-up">
         <i class="fas fa-chevron-up"></i>
@@ -301,10 +337,10 @@ En las actualizaciones epidemiológicas semanales de la OMS- en inglés, se prop
         </div>
     </footer>
 
-    <script src="header.js"></script>
-    <script src="button-up.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/button-up.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="scroll-suave.js"></script>
+    <script src="js/scroll-suave.js"></script>
 
 </body>
 </html>

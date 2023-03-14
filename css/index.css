@@ -81,7 +81,7 @@ header a:hover {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("img/hero.jpg");
+    url("/img/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -168,7 +168,7 @@ header a:hover {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("img/variante.jpg");
+    url("/img/variante.jpg");
   background-size: cover;
   background-position: center center;
   border-radius: 15px;
@@ -184,7 +184,7 @@ header a:hover {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("img/cepa.jpg");
+    url("/img/cepa.jpg");
   background-size: cover;
   background-position: center center;
   border-radius: 15px;
@@ -200,7 +200,7 @@ header a:hover {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("img/virulencia.png");
+    url("/img/virulencia.png");
   background-size: cover;
   background-position: center center;
   border-radius: 15px;
@@ -291,7 +291,7 @@ footer {
   background-color: white;
   width: 100%;
   padding: 50px 0px;
-  background-image: url("img/background-footer.svg");
+  background-image: url("/img/background-footer.svg");
   background-size: cover;
 }
 
@@ -409,7 +409,7 @@ footer {
   #hero {
     position: relative;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("img/hero.jpg");
+      url("/img/hero.jpg");
     background-size: cover;
     background-position: center center;
   }
@@ -467,7 +467,7 @@ footer {
   }
 
   #descripcion-general .img-oms {
-    background-image: url("img/oms.jpg");
+    background-image: url("/img/oms.jpg");
     background-size: cover;
     background-position: center center;
     height: 400px;
@@ -505,7 +505,7 @@ footer {
   }
 
   #donde-surgio .img-china {
-    background-image: url("img/china.png");
+    background-image: url("/img/china.png");
     background-size: cover;
     background-position: center center;
     height: 400px;
@@ -533,7 +533,7 @@ footer {
   }
 
   #nuevo-coronavirus .img-mercado {
-    background-image: url("img/mercado.jpg");
+    background-image: url("/img/mercado.jpg");
     background-size: cover;
     background-position: center center;
     height: 400px;
@@ -565,7 +565,7 @@ footer {
   }
 
   #evolucion .img-adn {
-    background-image: url("img/adn.jpg");
+    background-image: url("/img/adn.jpg");
     background-size: cover;
     background-position: center center;
     height: 400px;
@@ -606,7 +606,7 @@ footer {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
       ),
-      url("img/variante.jpg");
+      url("/img/variante.jpg");
     background-size: cover;
     background-position: center center;
     border-radius: 15px;
@@ -622,7 +622,7 @@ footer {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
       ),
-      url("img/cepa.jpg");
+      url("/img/cepa.jpg");
     background-size: cover;
     background-position: center center;
     border-radius: 15px;
@@ -638,7 +638,7 @@ footer {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
       ),
-      url("img/virulencia.png");
+      url("/img/virulencia.png");
     background-size: cover;
     background-position: center center;
     border-radius: 15px;
@@ -690,7 +690,7 @@ footer {
   }
 
   #proteina-s .img-proteina {
-    background-image: url("img/proteina-s.png");
+    background-image: url("/img/proteina-s.png");
     background-size: cover;
     background-position: center center;
     height: 400px;
@@ -713,7 +713,7 @@ footer {
   }
 
   #prevencion .img-virus {
-    background-image: url("img/virus.jpg");
+    background-image: url("/img/virus.jpg");
     background-size: cover;
     background-position: center center;
     height: 400px;
@@ -736,7 +736,7 @@ footer {
   }
 
   #mascarilla .img-cubrebocas {
-    background-image: url("img/cubrebocas.png");
+    background-image: url("/img/cubrebocas.png");
     background-size: cover;
     background-position: center center;
     height: 400px;
@@ -772,7 +772,7 @@ footer {
     background-color: white;
     width: 100%;
     padding: 50px 0px;
-    background-image: url("img/background-footer.svg");
+    background-image: url("/img/background-footer.svg");
     background-size: cover;
   }
 
