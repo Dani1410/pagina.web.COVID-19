@@ -236,6 +236,116 @@ En las actualizaciones epidemiológicas semanales de la OMS- en inglés, se prop
         </div>
     </section>
 
+    <section id="muertes">
+        <div class="titulo">
+            <h3>Personas facellidas por pais</h3>
+        </div>
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            Pais afectado
+                        </th>
+                        <th>
+                            Personas facellidas
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            EE.UU
+                        </td>
+                        <td>1.148.391 Personas muertas</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Brasil
+                        </td>
+                        <td>
+                            699.310 Personas muertas
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            India
+                        </td>
+                        <td>
+                            530.779 Personas muertas
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Rusia
+                        </td>
+                        <td>
+                            396.507 Personas muertas
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Mexico
+                        </td>
+                        <td>
+                            333.188 Personas muertas
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Peru
+                        </td>
+                        <td>
+                            219.539 Personas muertas
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Reino Unido
+                        </td>
+                        <td>
+                            207.695 Personas muertas
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Italia
+                        </td>
+                        <td>
+                            188.322 Personas muertas
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Alemania
+                        </td>
+                        <td>
+                            168.935 Personas muertas
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Francia
+                        </td>
+                        <td>
+                            165.073 Personas muertas
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
     <section id="prevencion">
         <div class="container">
             <div class="texto">
@@ -297,10 +407,10 @@ En las actualizaciones epidemiológicas semanales de la OMS- en inglés, se prop
                 <input type="text" id="names" name="nombre" required>
 
                 <label for="phone">Telefono / Celular</label>
-                <input type="text" id="phone" name="telefono">
+                <input type="text" id="phone" name="telefono" pattern="([0-9]{2})-[0-9]{4}-[0-9]{4}" placeholder="00-0000-0000">
 
                 <label for="email">Correo electronico *</label>
-                <input type="text" id="email" name="correo" required>
+                <input type="email" id="email" name="correo" pattern="^(?=.{1,64}@)[A-Za-z0-9_-]+(\\.[A-Za-z0-9_-]+)*@[^-][A-Za- z0-9-]+(\\.[A-Za-z0-9-]+)*(\\.[A-Za-z]{2,})$" required placeholder="xxxx@xxxx.com">
 
                 <label for="mensaje">Mensaje *</label>
                 <textarea id="mensaje" name="mensaje" required></textarea>
