@@ -17,6 +17,11 @@ $carta .= "Mensaje: $mensaje";
 
 // Enviando Mensaje
 mail($destinatario, $asunto, $carta);
-header('Location:mensaje-de-envio.html');
+echo '
+            <script>
+                alert("Mensaje enviado correctamente");
+                window.location = "../index.php";
+            </script>
+        ';
 
 ?>

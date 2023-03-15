@@ -1,3 +1,20 @@
+<?php
+
+    session_start();
+
+    if(!isset($_SESSION['usuario'])){
+        echo '
+            <script>
+                alert("Por favor debes iniciar sesion");
+                window.location = "login.php"
+            </script>
+        ';
+        session_destroy();
+        die();
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,9 +23,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COVID-19</title>
     
-    <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="img/virus-solid.svg">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/estilos.css">
 
     <script src="https://kit.fontawesome.com/1731f30281.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.2.1.js"></script>
@@ -23,7 +40,8 @@
                 <a href="#sintomas">Sintomas</a>
                 <a href="#evolucion">Evolucion</a>
                 <a href="#contactanos">Contactanos</a>
-                <a href="#">Login</a>
+                <a href="./login.php">Login</a>
+                <a href="php/cerrar_sesion_be.php">Cerrar Sesion</a>
             </nav>
         </div>
     </header>
@@ -271,7 +289,7 @@ En las actualizaciones epidemiológicas semanales de la OMS- en inglés, se prop
             </section>
         </section>
 
-        <form action="enviar.php" method="post" class="form_contact">
+        <form action="php/enviar.php" method="POST" class="form_contact">
             <h2>Envia un correo</h2>
             <div class="user_info">
                 <label for="names">Nombres *</label>
