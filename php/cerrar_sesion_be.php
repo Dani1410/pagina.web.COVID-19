@@ -1,3 +1,5 @@
+<!-- Destruye la sesion y nos lleva al login  -->
+
 <?php
 
 session_start();

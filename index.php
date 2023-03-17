@@ -1,3 +1,5 @@
+<!-- Si no hay sesion iniciada nos lleva a el login -->
+
 <?php
 
     session_start();
@@ -15,6 +17,8 @@
 
 ?>
 
+<!-- Estructura HTML -->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -22,16 +26,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COVID-19</title>
-    
+
+    <!-- Enlace a css -->
+
     <link rel="icon" href="img/virus-solid.svg">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/estilos.css">
+    
+    <!-- Enlace a FONTAWESOME y JS -->
 
     <script src="https://kit.fontawesome.com/1731f30281.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/script.js"></script>
 </head>
 <body>
+
+    <!-- Hero -->
+
     <header>
         <div class="container">
             <a href="#hero"><p class="logo">COVID-19</p></a>
@@ -45,6 +56,8 @@
             </nav>
         </div>
     </header>
+
+    <!-- Texto animado -->
 
     <section id="hero">
         <h1 class="border">COVID-19</h1>
@@ -166,6 +179,8 @@ Hay que tener en cuenta, según destaca López-Goñi, que las enzimas (proteína
         </div>
     </section>
 
+    <!-- Cartas  -->
+
     <section id="vcv">
         <div class="carts">
             <div class="cart cart1">
@@ -235,6 +250,8 @@ En las actualizaciones epidemiológicas semanales de la OMS- en inglés, se prop
             </p>
         </div>
     </section>
+
+    <!-- Tabla -->
 
     <section id="muertes">
         <div class="titulo">
@@ -386,6 +403,8 @@ En las actualizaciones epidemiológicas semanales de la OMS- en inglés, se prop
         </div>
     </section>
 
+    <!-- Contactanos -->
+
     <section class="form_wrap" id="contactanos">
 
         <section class="cantact_info">
@@ -398,7 +417,6 @@ En las actualizaciones epidemiológicas semanales de la OMS- en inglés, se prop
                 <p><span class="fa fa-mobile"></span> 55-2999-9983</p>
             </section>
         </section>
-
         
         <form action="php/enviar.php" method="POST" class="form_contact">
             <h2>Envia un correo</h2>
@@ -421,9 +439,13 @@ En las actualizaciones epidemiológicas semanales de la OMS- en inglés, se prop
 
     </section>
 
+    <!-- Boton para subir hasta arriba -->
+
     <div id="button-up">
         <i class="fas fa-chevron-up"></i>
     </div>
+
+    <!-- Footer -->
 
     <footer>
         <div class="container__footer">
@@ -465,6 +487,8 @@ En las actualizaciones epidemiológicas semanales de la OMS- en inglés, se prop
             </p>
         </div>
     </footer>
+
+    <!-- Conexion a JAVASCRIPT -->
 
     <script src="js/header.js"></script>
     <script src="js/button-up.js"></script>

@@ -1,5 +1,7 @@
 <?php 
 
+// inicia una sesion 
+
     session_start();
 
     include 'conexion_be.php';
@@ -7,13 +9,21 @@
     $usuario = $_POST['usuario'];
     $contrasena = $_POST['contrasena'];
 
+    // Valida el usuario
+
     $validar_login = mysqli_query($conexion, "SELECT * FROM usuarios WHERE usuario = '$usuario' AND contrasena = '$contrasena' ");
+
+    // Si si hay sesion los lleva a la pagina principal
 
     if(mysqli_num_rows($validar_login) > 0){
         $_SESSION['usuario'] = $usuario;
         header("Location: ../index.php");
         exit;
-    } else {
+    } 
+    
+    // Si no nos dice que no existe y nos regresa a el login
+
+    else {
         echo '
             <script>
                 alert("Usuario no existe, por favor verifique los datos introducidos");
