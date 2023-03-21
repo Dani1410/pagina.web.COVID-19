@@ -3,9 +3,9 @@
 // Variables
 
     $user = "localhost";
-    $nombre_usuario = "id20446774_dani";
-    $password = "EXw9(qp]_A-5BcTz";
-    $nombre_bd = "id20446774_blog";
+    $nombre_usuario = "root";
+    $password = "";
+    $nombre_bd = "blog_db";
 
     // Conexion a base de datos
 
