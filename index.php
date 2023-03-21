@@ -410,7 +410,7 @@ En las actualizaciones epidemiológicas semanales de la OMS- en inglés, se prop
         <section class="cantact_info">
             <section class="info_title">
                 <span class="fa fa-user-circle"></span>
-                <h2>INFORMACION<br>DE CONTACTO</h2>
+                <h2 id="infocontact">INFORMACION<br>DE CONTACTO</h2>
             </section>
             <section class="info_items">
                 <p><span class="fa fa-envelope"></span> wolfchis0@gmail.com</p>
