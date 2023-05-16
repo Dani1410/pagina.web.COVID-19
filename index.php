@@ -477,7 +477,7 @@ En las actualizaciones epidemiológicas semanales de la OMS- en inglés, se prop
             <div class="box__footer">
                 <h4>Redes Sociales</h4>
                 <a href="https://www.facebook.com/profile.php?id=100055048711809" target="_blank"><i class="fa-brands fa-facebook"></i>Facebook</a>
-                <a href="https://www.instagram.com/danix.1410/" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                <a href="https://www.instagram.com/danix1410/" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a>
             </div>
         </div>
         <div class="box__copyrigtht">
