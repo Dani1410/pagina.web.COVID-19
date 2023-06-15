@@ -16,7 +16,13 @@
     // Si si hay sesion los lleva a la pagina principal
 
     if(mysqli_num_rows($validar_login) > 0){
+
+        $row = mysqli_fetch_assoc($validar_login);
+        $tipo_usuario = $row['tipo'];
+
         $_SESSION['usuario'] = $usuario;
+        $_SESSION['tipo'] = $tipo_usuario;
+            
         header("Location: ../index.php");
         exit;
     } 

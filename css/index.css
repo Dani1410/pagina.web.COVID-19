@@ -208,7 +208,7 @@ header a:hover {
   transition: all 300ms;
 }
 
-#vcv .cart:hover .titulo{
+#vcv .cart:hover .titulo {
   transform: scale(1.01);
 }
 
@@ -223,21 +223,21 @@ header a:hover {
   background: #41414138;
 }
 
-#vcv .cart a{
+#vcv .cart a {
   color: black;
 }
 
-#vcv .cart a:hover{
+#vcv .cart a:hover {
   color: blueviolet;
 }
 
-#vcv .cart .footer-cart{
+#vcv .cart .footer-cart {
   text-decoration: none;
   padding-top: 30px;
   padding-bottom: 20px;
 }
 
-.carts{
+.carts {
   position: relative;
   top: 0;
   left: 0;
@@ -648,7 +648,7 @@ footer {
     transition: all 300ms;
   }
 
-  #vcv .cart:hover .titulo{
+  #vcv .cart:hover .titulo {
     transform: scale(1.01);
   }
 
@@ -663,15 +663,15 @@ footer {
     background: #41414138;
   }
 
-  #vcv .cart a{
+  #vcv .cart a {
     color: black;
   }
 
-  #vcv .cart a:hover{
+  #vcv .cart a:hover {
     color: blueviolet;
   }
 
-  #vcv .cart .footer-cart{
+  #vcv .cart .footer-cart {
     text-decoration: none;
     padding-top: 30px;
     padding-bottom: 20px;
@@ -700,46 +700,46 @@ footer {
     width: 400px;
   }
 
-  #muertes .titulo{
+  #muertes .titulo {
     text-align: center;
     padding-bottom: 20px;
   }
 
-  #muertes .container{
-    border: solid 1px rgba(12,12,12,0.2);
+  #muertes .container {
+    border: solid 1px rgba(12, 12, 12, 0.2);
   }
 
-  #muertes table{
+  #muertes table {
     font-size: 20px;
     table-layout: fixed;
     border-collapse: collapse;
   }
 
-  #muertes thead{
+  #muertes thead {
     background: #7a7a7a;
   }
 
-  #muertes th{
+  #muertes th {
     padding: 20px 15px;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
   }
 
-  #muertes td{
+  #muertes td {
     width: 800px;
     padding: 15px;
     border-bottom: solid 1px rgb(12, 12, 12, 0.2);
   }
 
-  #muertes tr{
+  #muertes tr {
     width: 800px;
     padding: 15px;
     border-bottom: solid 1px rgb(12, 12, 12, 0.2);
     text-align: center;
   }
 
-  #muertes tbody tr:hover{
+  #muertes tbody tr:hover {
     background: rgb(30, 30, 30, 0.2);
   }
 
