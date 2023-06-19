@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-06-2023 a las 07:02:06
+-- Tiempo de generación: 19-06-2023 a las 07:32:57
 -- Versión del servidor: 10.4.21-MariaDB
 -- Versión de PHP: 7.3.30
 
@@ -41,11 +41,9 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id_usuario`, `nombre_completo`, `correo`, `usuario`, `contrasena`, `tipo`) VALUES
-(1, 'Axel Daniel Ortega Rodriguez', 'wolfchis0@gmail.com', 'usuario', 'usuario', 'usuario'),
-(2, 'German Raul Ortega Delgado', 'wolfchis@gmail.com', 'admin', 'admin', 'admin'),
-(3, '', 'wolfchis1@gmail.com', 'fati', 'fati', 'admin'),
-(4, '', 'isra@gmail.com', 'isra', 'isra', 'usuario'),
-(5, '', 'd@gmail.com', 'd', 'd', 'admin');
+(5, 'German Raul Ortega Delgado', 'usuario@gmail.com', 'usuario', 'usuario', 'usuario'),
+(6, 'Axel Daniel Ortega Rodriguez', 'wolfchis0@gmail.com', 'admin', 'admin', 'admin'),
+(7, 'XXXX XXXX XXXX XXXX', 'xxxx@gmail.com', '1234', '1234', 'usuario');
 
 --
 -- Índices para tablas volcadas
@@ -65,7 +63,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
