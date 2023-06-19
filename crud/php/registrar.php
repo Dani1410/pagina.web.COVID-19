@@ -1,11 +1,6 @@
 <?php
 
-$user = "localhost";
-$nombre_usuario = "root";
-$password = "";
-$nombre_bd = "blog_db";
-
-$conexion = mysqli_connect($user, $nombre_usuario, $password, $nombre_bd);
+include '../php/conexion.php';
 
 // ___________________________________________________________________________
 
@@ -13,10 +8,9 @@ $nombre_completo = $_POST['nombre'];
 $correo = $_POST['correo'];
 $usuario = $_POST['usuario'];
 $contrasena = $_POST['contrasena'];
-$nueva_contrasena = password_hash($nueva_contrasena, PASSWORD_DEFAULT);
 $tipo_usuario = $_POST['tipo-usuario'];
 
-$query = "INSERT INTO usuarios (nombre_completo, correo, usuario, contrasena, tipo) VALUES ('$nombre', '$correo', '$usuario', '$nueva_contrasena', '$tipo_usuario')";
+$query = "INSERT INTO usuarios (nombre_completo, correo, usuario, contrasena, tipo) VALUES ('$nombre_completo', '$correo', '$usuario', '$contrasena', '$tipo_usuario')";
 
 
 //Verificar si el dato no se repite en la db

@@ -23,27 +23,9 @@ if (isset($_SESSION['usuario'])) {
 
     <link rel="stylesheet" href="./css/login-estilos.css">
 
-    <!-- CAPTCHA -->
-    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LffPZUmAAAAAMEvr5CH0A8zy59AQJumO1CAPHf2"></script>
-
 </head>
 
 <body>
-
-    <script>
-        function onClick(e) {
-            e.preventDefault();
-            grecaptcha.enterprise.ready(async () => {
-                const token = await grecaptcha.enterprise.execute('6LffPZUmAAAAAMEvr5CH0A8zy59AQJumO1CAPHf2', {
-                    action: 'LOGIN'
-                });
-                // IMPORTANT: The 'token' that results from execute is an encrypted response sent by
-                // reCAPTCHA Enterprise to the end user's browser.
-                // This token must be validated by creating an assessment.
-                // See https://cloud.google.com/recaptcha-enterprise/docs/create-assessment
-            });
-        }
-    </script>
 
     <main>
         <div class="g-recaptcha" data-sitekey="6LfwcaQmAAAAAJHJxrZ2Tn-NCHz4OH6qiBbiwhre"></div>

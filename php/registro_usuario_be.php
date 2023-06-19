@@ -6,9 +6,8 @@ $nombre_completo = $_POST['nombre_completo'];
 $correo = $_POST['correo'];
 $usuario = $_POST['usuario'];
 $contrasena = $_POST['contrasena'];
-$nueva_contrasena = password_hash($contrasena, PASSWORD_DEFAULT);
 
-$query = "INSERT INTO usuarios (nombre_completo, correo, usuario, contrasena, tipo) VALUES ('$nombre_completo', '$correo', '$usuario', '$nueva_contrasena', 'usuario')";
+$query = "INSERT INTO usuarios (nombre_completo, correo, usuario, contrasena, tipo) VALUES ('$nombre_completo', '$correo', '$usuario', '$contrasena', 'usuario')";
 
 
 //Verificar si el dato no se repite en la db

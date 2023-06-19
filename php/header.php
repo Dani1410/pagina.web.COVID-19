@@ -15,10 +15,8 @@
                 if ($tipo_usuario == 'admin') {
                     echo '<div class="menu__item container-submenu"><a href="#" class="menu__link submenu-btn">Usuarios <i class="fa-solid fa-chevron-down"></i></a>
                     <ul class="submenu">
-                        <li class="menu__item"><a href="./crud/registrar.html" class="menu__link">Registar</a></li>
-                        <li class="menu__item"><a href="./crud/" class="menu__link">Actualizar</a></li>
+                        <li class="menu__item"><a href="./crud/registrar.html" class="menu__link">Registrar</a></li>
                         <li class="menu__item"><a href="./crud/leer.php" class="menu__link">Buscar</a></li>
-                        <li class="menu__item"><a href="./crud/" class="menu__link">Borrar</a></li>
                     </ul></div>';
                 } else if ($tipo_usuario == 'usuario') {
                     echo '<div class="menu__item container-submenu"><a href="#" class="menu__link submenu-btn">PDFS <i class="fa-solid fa-chevron-down"></i></a>

@@ -8,6 +8,92 @@
     <link rel="stylesheet" href="./css/leer.css">
     <link rel="stylesheet" href="/bootstrap-5.3.0-dist/css/bootstrap.min.css">
 
+    <style>
+        /* Hover styles for table rows */
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        /* Styling for the "Regresar" link */
+        .logo {
+            color: #333;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .logo:hover {
+            text-decoration: underline;
+        }
+
+        /* Styling for the table */
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            /* Center the table horizontally */
+        }
+
+        .table th,
+        .table td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .table th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+
+        /* Styling for the "Eliminar" button */
+        input[type="submit"] {
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #c82333;
+        }
+
+        /* Styling for the "Editar" link */
+        .edit-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .edit-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Styling for the header */
+        #header {
+            background-color: #f8f9fa;
+            padding: 10px;
+        }
+
+        /* Styling for the main container */
+        .espacio-tabla {
+            margin-top: 20px;
+        }
+
+        /* Styling for the table container */
+        .table-container {
+            max-width: 800px;
+            margin: 0 auto;
+            overflow-x: auto;
+        }
+
+        /* Styling for responsive table */
+        @media only screen and (max-width: 767px) {
+            .table-container {
+                overflow-x: scroll;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -31,12 +117,7 @@
 
                 <?php
 
-                $user = "localhost";
-                $nombre_usuario = "root";
-                $password = "";
-                $nombre_bd = "blog_db";
-
-                $conexion = mysqli_connect($user, $nombre_usuario, $password, $nombre_bd);
+                include './php/conexion.php';
 
                 $sql = "SELECT * FROM usuarios";
                 $result = mysqli_query($conexion, $sql);
