@@ -1,7 +1,7 @@
 <header>
     <div class="container">
         <a href="#hero">
-            <p class="logo">COVID-19</p>
+            <p class="logo">Bienvenido! <?php echo $_SESSION['primer_nombre']; ?></p>
         </a>
         <nav>
             <a href="#descripcion-general">Descripcion General</a>

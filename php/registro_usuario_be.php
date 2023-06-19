@@ -6,8 +6,9 @@ $nombre_completo = $_POST['nombre_completo'];
 $correo = $_POST['correo'];
 $usuario = $_POST['usuario'];
 $contrasena = $_POST['contrasena'];
+$nueva_contrasena = password_hash($contrasena, PASSWORD_DEFAULT);
 
-$query = "INSERT INTO usuarios (nombre_completo, correo, usuario, contrasena, tipo) VALUES ('$nombre_completo', '$correo', '$usuario', '$contrasena', 'usuario')";
+$query = "INSERT INTO usuarios (nombre_completo, correo, usuario, contrasena, tipo) VALUES ('$nombre_completo', '$correo', '$usuario', '$nueva_contrasena', 'usuario')";
 
 
 //Verificar si el dato no se repite en la db
@@ -20,7 +21,7 @@ if (mysqli_num_rows($verificar_correo) > 0) {
                 window.location = "../login.php";
             </script>
         ';
-        exit();
+    exit();
 }
 
 $verificar_usuario = mysqli_query($conexion, "SELECT * FROM usuarios WHERE usuario = '$usuario' ");
@@ -32,8 +33,8 @@ if (mysqli_num_rows($verificar_usuario) > 0) {
                 window.location = "../login.php";
             </script>
         ';
-        exit();
-} 
+    exit();
+}
 
 $ejecutar = mysqli_query($conexion, $query);
 
