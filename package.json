@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0"
+  },
+  "dependencies": {
+    "uglify-js": "^3.17.4"
+  }
+}
