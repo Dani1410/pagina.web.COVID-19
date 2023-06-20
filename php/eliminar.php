@@ -11,6 +11,6 @@ $id = $_POST['txt-id'];
 
 mysqli_query($conexion, "DELETE FROM usuarios WHERE id_usuario = $id") or die("Error al eliminar");
 mysqli_close($conexion);
-header("location: ../leer.php");
+header("location: ./leer.php");
 
 ?>

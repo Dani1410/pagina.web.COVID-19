@@ -117,7 +117,7 @@
 
                 <?php
 
-                include './php/conexion.php';
+                include 'conexion.php';
 
                 $sql = "SELECT * FROM usuarios";
                 $result = mysqli_query($conexion, $sql);
@@ -136,14 +136,14 @@
                         <td><?php echo $mostrar['tipo']; ?></td>
                         <td>
                             <!-- Eliminar -->
-                            <form action="php/eliminar.php" method="POST">
+                            <form action="./eliminar.php" method="POST">
                                 <input type="hidden" value="<?php echo $mostrar['id_usuario']; ?>" name="txt-id" readonly>
                         <td><input type="submit" value="Eliminar" name="btnEliminar"></td>
                         </form>
                         </td>
                         <td>
                             <!-- Editar -->
-                            <a href="php/editar.php?id=<?php echo $mostrar['id_usuario']; ?>">Editar</a>
+                            <a href="./editar.php?id=<?php echo $mostrar['id_usuario']; ?>">Editar</a>
                         </td>
                     </tr>
 

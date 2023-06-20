@@ -34,7 +34,6 @@ if (!isset($_SESSION['usuario'])) {
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/menu.css">
-    <link rel="stylesheet" href="./bootstrap-5.3.0-dist/css/bootstrap.min.css">
 
     <!-- Enlace a FONTAWESOME y JS -->
 
@@ -56,7 +55,13 @@ if (!isset($_SESSION['usuario'])) {
 
     <section id="descripcion-general">
         <div class="container">
-            <div class="img-oms"></div>
+            <div class="img img-oms">
+                <figure><img src="./img/oms.jpg" alt="La imagen no cargo correctamente" style="height: 400px;">
+                    <div class="capa">
+                        <p>Es el simbolo de la OMS</p>
+                    </div>
+                </figure>
+            </div>
             <div class="texto">
                 <h2>Descripcion general</h2>
                 <p>
@@ -76,7 +81,13 @@ if (!isset($_SESSION['usuario'])) {
                     Surgio en <strong>China</strong> y <strong>Arabia Saudí</strong> en los años 2002 y 2012 respectivamente. El primero tiene su origen en los <strong>murciélagos</strong>, mientras que el MERS-CoV provino de los <strong>camellos</strong> o dromedarios, quienes a su vez transmitieron el virus a los humanos por zoonosis, pero antes de entrar de lleno en la materia, es necesario explicar un término importante.
                 </p>
             </div>
-            <div class="img-china"></div>
+            <div class="img img-china">
+                <figure><img src="./img/china.png" alt="La imagen no cargo correctamente" style="height: 400px;">
+                    <div class="capa">
+                        <p>Ilustracion del territorio de china</p>
+                    </div>
+                </figure>
+            </div>
         </div>
     </section>
 
@@ -109,7 +120,13 @@ if (!isset($_SESSION['usuario'])) {
                     Cabe destacar, que casi todos los casos reportados fuera de <strong>China</strong>, tienen el antecedente común de haber sido personas que viajaron a ese país y/o a la provincia de Hubei, antes del inicio de los síntomas.
                 </p>
             </div>
-            <div class="img-mercado"></div>
+            <div class="img img-mercado">
+                <figure><img src="./img/mercado.jpg" alt="La imagen no cargo correctamente" style="height: 400px;">
+                    <div class="capa">
+                        <p>Ilustracion del mercado de el mercado WU (China)</p>
+                    </div>
+                </figure>
+            </div>
         </div>
     </section>
 
@@ -154,7 +171,13 @@ if (!isset($_SESSION['usuario'])) {
                     Los cambios del virus que se conocen como mutaciones se producen al azar, pero están influidos por <strong>la presión a la que está sometido el virus</strong>. Uno de los factores que puede impulsar esos cambios es la vacunación. Por eso, en palabras de Raúl Rivas, profesor de Microbiología del Departamento de Microbiología y Genética de la Universidad de Salamanca, “no podemos dilatar en el tiempo la vacunación porque <strong>esa presión selectiva va a hacer que el virus busque salidas</strong> y van a empezar a surgir variantes capaces de escapar y transmitirse mucho mejor”.
                 </p>
             </div>
-            <div class="img-adn"></div>
+            <div class="img img-adn">
+                <figure><img src="./img/adn.jpg" alt="La imagen no cargo correctamente" style="height: 400px;">
+                    <div class="capa">
+                        <p>Representacion del ADN</p>
+                    </div>
+                </figure>
+            </div>
         </div>
     </section>
 
@@ -212,7 +235,13 @@ if (!isset($_SESSION['usuario'])) {
 
     <section id="proteina-s">
         <div class="container">
-            <div class="img-proteina"></div>
+            <div class="img img-proteina">
+                <figure><img src="./img/proteina-s.png" alt="La imagen no cargo correctamente" style="height: 400px;">
+                    <div class="capa">
+                        <p>Representacion de las proteinas-s</p>
+                    </div>
+                </figure>
+            </div>
             <div class="texto">
                 <h3>Proteina S</h3>
                 <p>
@@ -385,13 +414,25 @@ if (!isset($_SESSION['usuario'])) {
                 </ul>
                 </p>
             </div>
-            <div class="img-virus"></div>
+            <div class="img img-virus">
+                <figure><img src="./img/virus.jpg" alt="La imagen no cargo correctamente" style="height: 400px;">
+                    <div class="capa">
+                        <p>Representacion de el virus COVID-19</p>
+                    </div>
+                </figure>
+            </div>
         </div>
     </section>
 
     <section id="mascarilla">
         <div class="container">
-            <div class="img-cubrebocas"></div>
+            <div class="img img-cubrebocas">
+                <figure><img src="./img/cubrebocas.png" alt="La imagen no cargo correctamente" style="height: 400px;">
+                    <div class="capa">
+                        <p>Correcto uso de el cubrebocas</p>
+                    </div>
+                </figure>
+            </div>
             <div class="texto">
                 <h3>¿Cómo usar la mascarilla?</h3>
                 <p>Luego de que el virus se propagara por todo el mundo, muchas personas han tenido que salir de sus casas para realizar sus labores diarias y llevar el pan de cada día, por lo que es sumamente indispensable y obligatorio el uso de las mascarillas. ¿Quieres saber cómo usarlas? ¡Presta mucha atención!
@@ -497,7 +538,6 @@ if (!isset($_SESSION['usuario'])) {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scroll-suave.js"></script>
     <script src="./js/menu.js"></script>
-    <script src="./bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
 
 </body>
 

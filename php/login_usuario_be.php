@@ -4,7 +4,7 @@
 
 session_start();
 
-include 'conexion_be.php';
+include 'conexion.php';
 
 $usuario = $_POST['usuario'];
 $contrasena = $_POST['contrasena'];
@@ -15,7 +15,7 @@ $validar_login = mysqli_query($conexion, "SELECT * FROM usuarios WHERE usuario =
 
 // Si si hay sesion los lleva a la pagina principal
 
-if (mysqli_num_rows($validar_login) > 0) {
+if (mysqli_num_rows($validar_login) == 1) {
 
     $row = mysqli_fetch_assoc($validar_login);
     $tipo_usuario = $row['tipo'];

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Usuario</title>
     <link rel="stylesheet" href="./css/leer.css">
-    <link rel="stylesheet" href="/bootstrap-5.3.0-dist/css/bootstrap.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -90,13 +89,13 @@
 
 <body>
     <header id="header">
-        <a href="../leer.php" class="logo">Regresar</a>
+        <a href="./leer.php" class="logo">Regresar</a>
     </header>
     <div class="espacio-formulario">
         <h1>Editar Usuario</h1>
         <?php
         // Conexión a la base de datos
-        include '../php/conexion.php';
+        include 'conexion.php';
 
         // Obtener el ID del usuario a editar
         $idUsuario = $_GET['id'];
@@ -120,7 +119,7 @@
                 $sql = "UPDATE usuarios SET nombre_completo = '$nombreCompleto', correo = '$correo', usuario = '$usuario', contrasena = '$contrasena', tipo = '$tipo' WHERE id_usuario = '$idUsuario'";
 
                 if (mysqli_query($conexion, $sql)) {
-                    echo "<script>alert('Registro editado.'); window.location = '../leer.php';</script>";
+                    echo "<script>alert('Registro editado.'); window.location = './leer.php';</script>";
                     exit();
                 } else {
                     echo "Error al actualizar el usuario: " . mysqli_error($conexion);

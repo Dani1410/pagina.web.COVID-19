@@ -15,8 +15,8 @@
                 if ($tipo_usuario == 'admin') {
                     echo '<div class="menu__item container-submenu"><a href="#" class="menu__link submenu-btn">Usuarios <i class="fa-solid fa-chevron-down"></i></a>
                     <ul class="submenu">
-                        <li class="menu__item"><a href="./crud/registrar.html" class="menu__link">Registrar</a></li>
-                        <li class="menu__item"><a href="./crud/leer.php" class="menu__link">Buscar</a></li>
+                        <li class="menu__item"><a href="./registrar.html" class="menu__link">Registrar</a></li>
+                        <li class="menu__item"><a href="./php/leer.php" class="menu__link">Buscar</a></li>
                     </ul></div>';
                 } else if ($tipo_usuario == 'usuario') {
                     echo '<div class="menu__item container-submenu"><a href="#" class="menu__link submenu-btn">PDFS <i class="fa-solid fa-chevron-down"></i></a>
@@ -31,7 +31,7 @@
             <?php
 
             if (isset($_SESSION['usuario'])) {
-                echo '<a href="php/cerrar_sesion_be.php">Cerrar Sesion</a>';
+                echo '<a href="./php/cerrar_sesion_be.php">Cerrar Sesion</a>';
             } else {
                 echo '<a href="./login.php">Login</a>';
             }
