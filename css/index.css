@@ -543,9 +543,6 @@ footer {
   }
 
   #donde-surgio .img-china {
-    background-image: url("../img/china.png");
-    background-size: cover;
-    background-position: center center;
     height: 400px;
     width: 400px;
   }
@@ -571,9 +568,6 @@ footer {
   }
 
   #nuevo-coronavirus .img-mercado {
-    background-image: url("../img/mercado.jpg");
-    background-size: cover;
-    background-position: center center;
     height: 400px;
     width: 400px;
   }
@@ -603,9 +597,6 @@ footer {
   }
 
   #evolucion .img-adn {
-    background-image: url("../img/adn.jpg");
-    background-size: cover;
-    background-position: center center;
     height: 400px;
     width: 400px;
   }
@@ -728,9 +719,6 @@ footer {
   }
 
   #proteina-s .img-proteina {
-    background-image: url("../img/proteina-s.png");
-    background-size: cover;
-    background-position: center center;
     height: 400px;
     width: 400px;
   }
@@ -794,9 +782,6 @@ footer {
   }
 
   #prevencion .img-virus {
-    background-image: url("../img/virus.jpg");
-    background-size: cover;
-    background-position: center center;
     height: 400px;
     width: 400px;
   }
@@ -817,9 +802,6 @@ footer {
   }
 
   #mascarilla .img-cubrebocas {
-    background-image: url("../img/cubrebocas.png");
-    background-size: cover;
-    background-position: center center;
     height: 400px;
     width: 400px;
   }
